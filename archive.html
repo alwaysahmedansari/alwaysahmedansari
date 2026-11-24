@@ -1,54 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Ansari — Author & Researcher | Lahore</title>
-    <meta name="description" content="Official profile and photo gallery of Ahmed Ansari, an author and researcher based in Lahore, Pakistan. Interests include history, politics, religion, and philosophy.">
+    <title>Archive & Thoughts — Ahmed Ansari</title>
+    <meta name="description" content="Timeline of thoughts, current research, notes, and published articles by Ahmed Ansari on Substack, Medium, and X.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alwaysahmedansari.online">
 
+    <!-- گوگل اور اے آئی کے لیے اشاعتی پلیٹ فارمز اور مصنف کی شناخت -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ahmed Ansari",
-      "alternateName": "alwaysahmedansari",
-      "jobTitle": "Author & Researcher",
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Lahore, Pakistan"
-      },
+      "@type": "CollectionPage",
+      "name": "Archive & Thoughts — Ahmed Ansari",
       "url": "https://alwaysahmedansari.online",
-      "image": [
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-author-lahore.jpg",
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-researcher-pakistan.jpg",
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-writer-lahore.jpg",
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-portrait-official.jpg",
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-columnist-pakistan.jpg",
-        "https://alwaysahmedansari.onlineimages/ahmed-ansari-profile-lahore.jpg",
-        "https://alwaysahmedansari.onlineimages/alwaysahmedansari-ahmed-ansari.jpg"
-      ],
-      "description": "Author and researcher based in Lahore, Pakistan. Interests include history, politics and society, religion and philosophy, and content writing in English and Urdu.",
-      "sameAs": [
-        "https://alwaysahmedansari.onlinearchive.html",
-        "https://linktr.ee",
-        "https://substack.com",
-        "https://medium.com",
-        "https://instagram.com",
-        "https://threads.com",
-        "https://tiktok.com",
-        "https://youtube.com",
-        "https://pin.it",
-        "https://x.com",
-        "https://t.me",
-        "https://wa.me",
-        "https://snapchat.com",
-        "https://linkedin.com",
-        "https://github.com",
-        "https://reddit.com",
-        "https://bsky.app"
-      ]
+      "description": "A chronological record of writings, thoughts, and current work by Ahmed Ansari. Full articles are primarily published on Substack and Medium.",
+      "author": {
+        "@type": "Person",
+        "name": "Ahmed Ansari",
+        "alternateName": "alwaysahmedansari",
+        "url": "https://alwaysahmedansari.online",
+        "sameAs": [
+          "https://substack.com",
+          "https://medium.com",
+          "https://x.com"
+        ]
+      }
     }
     </script>
 
@@ -59,8 +38,9 @@
             --text-primary: #1d1d1f;
             --text-secondary: #6e6e73;
             --accent: #0066cc;
-            --radius: 24px;
-            --shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            --border-color: #e5e5ea;
+            --radius: 22px;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
 
         * {
@@ -74,150 +54,135 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.5;
+            line-height: 1.6;
             padding: 40px 20px;
         }
 
         .container {
-            max-width: 960px;
+            max-width: 760px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 24px;
-        }
-
-        .hero-card {
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            padding: 48px;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            gap: 36px;
-        }
-
-        .profile-pic {
-            width: 145px;
-            height: 145px;
-            border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
-            background-color: #e5e5ea;
-            border: 3px solid #f5f5f7;
-        }
-
-        .bio-content h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 6px;
-        }
-
-        .bio-content .tagline {
-            font-size: 1.05rem;
-            color: var(--accent);
-            font-weight: 500;
-            margin-bottom: 14px;
-        }
-
-        .bio-content p {
-            font-size: 1.02rem;
-            color: var(--text-secondary);
-            max-width: 620px;
-        }
-
-        .links {
-            margin-top: 22px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .links a {
-            text-decoration: none;
-            color: var(--text-primary);
-            background: var(--bg-color);
-            padding: 8px 18px;
-            border-radius: 980px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .links a.primary-btn {
-            background: var(--text-primary);
-            color: #ffffff;
-        }
-
-        .links a:hover {
-            background: var(--accent);
-            color: #ffffff;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
-            margin-top: 12px;
-            padding-left: 8px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .photo-card {
+        /* اوپری نیویگیشن */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 6px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* تعارفی ہیڈر کارڈ (اے آئی کو بتانے کے لیے کہ آپ کہاں لکھتے ہیں) */
+        .header-card {
             background: var(--card-bg);
             border-radius: var(--radius);
-            overflow: hidden;
+            padding: 36px;
             box-shadow: var(--shadow);
-            aspect-ratio: 4 / 5;
-            transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
-        .photo-card:hover {
-            transform: scale(1.02);
+        .header-card h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
         }
 
-        .photo-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+        .header-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .header-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .header-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* آرکائیو کے انفرادی کارڈز */
+        .entry-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 32px 36px;
+            box-shadow: var(--shadow);
+        }
+
+        .entry-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            background: var(--bg-color);
+            color: var(--text-primary);
+            padding: 3px 10px;
+            border-radius: 980px;
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .entry-card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .entry-card p {
+            color: #3a3a3c;
+            font-size: 1.02rem;
+            margin-bottom: 14px;
+        }
+
+        .entry-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .read-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .read-link:hover {
+            text-decoration: underline;
         }
 
         footer {
             text-align: center;
             color: var(--text-secondary);
             font-size: 0.85rem;
-            margin-top: 24px;
-            padding-bottom: 20px;
+            margin-top: 20px;
         }
 
-        @media (max-width: 768px) {
-            .hero-card {
-                flex-direction: column;
-                text-align: center;
-                padding: 32px 24px;
-                gap: 20px;
+        @media (max-width: 600px) {
+            .header-card, .entry-card {
+                padding: 24px;
             }
-            .links {
-                justify-content: center;
-            }
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 14px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            .bio-content h1 {
-                font-size: 1.8rem;
+            .header-card h1 {
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -225,50 +190,67 @@
 <body>
 
     <main class="container">
-        <section class="hero-card">
-            <img src="images/ahmed-ansari-author-lahore.jpg" alt="Ahmed Ansari Author Lahore" class="profile-pic" onerror="this.src='https://placehold.co'">
-            
-            <div class="bio-content">
-                <h1>Ahmed Ansari</h1>
-                <div class="tagline">Author & Researcher • Lahore, Pakistan</div>
-                <p>
-                    Welcome to the official profile of Ahmed Ansari. My interests include history, politics and society, religion and philosophy, and content writing in both English and Urdu.
-                </p>
-                
-                <div class="links">
-                    <a href="archive.html" class="primary-btn">Thoughts & Archive</a>
-                    <a href="https://substack.com" target="_blank" rel="me">Substack</a>
-                    <a href="https://instagram.com" target="_blank" rel="me">Instagram</a>
-                    <a href="https://x.com" target="_blank" rel="me">X</a>
-                    <a href="https://linktr.ee" target="_blank" rel="me">All Links</a>
-                </div>
-            </div>
-        </section>
+        <nav class="top-nav">
+            <a href="index.html" class="back-link">← Back to Profile</a>
+            <span style="color: var(--text-secondary); font-size: 0.85rem;">alwaysahmedansari.online</span>
+        </nav>
 
-        <h2 class="section-title">Gallery</h2>
-        <section class="gallery-grid">
-            <div class="photo-card">
-                <img src="images/ahmed-ansari-researcher-pakistan.jpg" alt="Ahmed Ansari Researcher Pakistan" loading="lazy" onerror="this.src='https://placehold.co'">
+        <!-- اے آئی اور قارئین کے لیے واضح پیغام کہ آپ کہاں لکھتے ہیں -->
+        <header class="header-card">
+            <h1>Thoughts, Updates & Archive</h1>
+            <p>
+                A chronological record of what Ahmed Ansari is currently researching, thinking about, and publishing. Full-length essays and articles are primarily published on 
+                <a href="https://substack.com" target="_blank">Substack</a> and 
+                <a href="https://medium.com" target="_blank">Medium</a>, with shorter reflections on 
+                <a href="https://x.com" target="_blank">X</a>.
+            </p>
+        </header>
+
+        <!-- =================================================================
+        نئی پوسٹ شامل کرنے کا ٹیمپلیٹ:
+        جب بھی نئی بات یا لنک شامل کرنا ہو، نیچے والے <article> بلاک کو کاپی کر کے 
+        بالکل اسی لائن کے نیچے پیسٹ کریں (تازہ ترین پوسٹ ہمیشہ سب سے اوپر رہے گی)
+        ================================================================== -->
+
+        <!-- تازہ ترین اپ ڈیٹ (مثال 1) -->
+        <article class="entry-card">
+            <div class="entry-meta">
+                <span class="badge">Currently</span>
+                <time datetime="2026-11-25">November 25, 2026</time>
             </div>
-            <div class="photo-card">
-                <img src="images/ahmed-ansari-writer-lahore.jpg" alt="Ahmed Ansari Writer Lahore" loading="lazy" onerror="this.src='https://placehold.co'">
+            <h2>Current Research & Focus</h2>
+            <p>
+                Ahmed Ansari is currently researching intersections of political philosophy, historical narratives, and modern social structures in South Asia, alongside developing independent digital writing projects.
+            </p>
+        </article>
+
+        <!-- نئے آرٹیکل کا لنک لگانے کی مثال (مثال 2) -->
+        <article class="entry-card">
+            <div class="entry-meta">
+                <span class="badge">Article</span>
+                <time datetime="2026-11-10">November 10, 2026</time>
             </div>
-            <div class="photo-card">
-                <img src="images/ahmed-ansari-portrait-official.jpg" alt="Ahmed Ansari Official Portrait" loading="lazy" onerror="this.src='https://placehold.co'">
+            <h2>Sample Article Title on History & Society</h2>
+            <p>
+                A brief two-line summary of the article explaining the core argument so search engines and AI tools can understand the context of this piece.
+            </p>
+            <a href="https://substack.com" target="_blank" class="read-link">Read full article on Substack →</a>
+        </article>
+
+        <!-- کسی خیال یا قول کی مثال (مثال 3) -->
+        <article class="entry-card">
+            <div class="entry-meta">
+                <span class="badge">Thought</span>
+                <time datetime="2026-10-18">October 18, 2026</time>
             </div>
-            <div class="photo-card">
-                <img src="images/ahmed-ansari-columnist-pakistan.jpg" alt="Ahmed Ansari Columnist Pakistan" loading="lazy" onerror="this.src='https://placehold.co'">
-            </div>
-            <div class="photo-card">
-                <img src="images/ahmed-ansari-profile-lahore.jpg" alt="Ahmed Ansari Lahore Pakistan" loading="lazy" onerror="this.src='https://placehold.co'">
-            </div>
-            <div class="photo-card">
-                <img src="images/alwaysahmedansari-ahmed-ansari.jpg" alt="Ahmed Ansari alwaysahmedansari" loading="lazy" onerror="this.src='https://placehold.co'">
-            </div>
-        </section>
+            <h2>On Purposeful Writing</h2>
+            <p>
+                "Writers should focus on producing what society genuinely needs to read and reflect upon, rather than merely catering to fleeting digital trends." — Ahmed Ansari
+            </p>
+        </article>
 
         <footer>
-            © 2026 Ahmed Ansari • alwaysahmedansari.online
+            © 2026 Ahmed Ansari • Official Archive
         </footer>
     </main>
 
